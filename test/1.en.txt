@@ -1,0 +1,35 @@
+#include <stdio.h>
+
+int main()
+{
+    // 初始化数据
+    int i = 10;
+    int j = 20;
+    int a[10] = {0,};
+
+    float money = 200.50;
+
+    char name[256] = "艾伦";
+
+    // 打印类容
+    if (i >= j)
+    {
+        printf("hello world");
+    }
+
+    // 初始化数组
+    for(i = 0; i < 10; i++)
+    {
+        a[i] = i;
+    }
+
+    // 遍历数组
+    for(i = 0; i < 10; i++)
+    {
+        printf("%d", a[i]);
+    }
+
+    return 0;
+}
+
+main 
