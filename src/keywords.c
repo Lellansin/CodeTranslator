@@ -1,3 +1,5 @@
+#include <string.h>
+
 #include "keywords.h"
 
 // ¹Ø¼ü×ÖÊý×é

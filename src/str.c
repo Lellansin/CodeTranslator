@@ -1,4 +1,5 @@
 #include <stdio.h>
+#include <string.h>
 
 #include "str.h"
 #include "keywords.h"
@@ -11,8 +12,8 @@ extern int kw_count;
 /*
 	获取字符串中的中文，并替换成英文
 
-	char *original 原字符串
-	char *after 替换后的字符串
+	char *original	原字符串
+	char *after		替换后的字符串
 
 	示例：
 	char a[50] = "Hey guys! 若 i == 1";
@@ -72,8 +73,6 @@ char * getValueByName(char *name, char *add)
 	char *start = add;
 	int flag = 0;
 
-	// while(*add != '\0') add++;
-
 	for(i = 0; i < kw_count; i++)
 	{
 		if( strcmp(keywords[i].name, name) == 0 )
@@ -107,8 +106,10 @@ char * getValueByName(char *name, char *add)
 	return add;
 }
 
-
-// 获取字符串中的中文
+/*
+ * (未使用)
+ * 获取字符串中的中文
+ */
 void getChinese(char *str)
 {
 	char word[10][256] = {0};
