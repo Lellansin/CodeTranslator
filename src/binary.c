@@ -3,14 +3,13 @@
 #include "binary.h"
 #include "keywords.h"
 
-extern keyword keywords[100];
-extern int kw_count;
-
+extern _CONFIG Config;
 
 /*
- * 打印中文每1字节的值
+ * 打印字符串每一字节的值
+ * 比如用来打印中文每1字节的值
  */
-void printChineseBinary(char *string)
+void printByte(char *string)
 {
 	int i;
 	char *start = string;
@@ -29,15 +28,15 @@ void printChineseBinary(char *string)
 /*
  * 遍历关键字，打印1字节的值
  */
-void printBinary()
+void printByteKeywords()
 {
 	int i;
 	char *start;
 
-	for(i = 0; i < kw_count; i++)
+	for(i = 0; i < Config.count; i++)
 	{
-		printf("%s - %s", keywords[i].name, keywords[i].value);
-		start = keywords[i].name;
+		printf("%s - %s", Config.keywords[i].name, Config.keywords[i].value);
+		start = Config.keywords[i].name;
 
 		printf("\n");
 		

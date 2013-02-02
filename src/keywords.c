@@ -2,18 +2,15 @@
 
 #include "keywords.h"
 
-// 关键字数组
-keyword keywords[100];
-// 关键字数目
-int kw_count;
+_CONFIG Config;
 
 // 设置关键字
 void setKeyword(char *name, char *value, int type)
 {
-	strcpy( keywords[kw_count].name, name);
-	strcpy( keywords[kw_count].value, value);
-	keywords[kw_count].type = type;
-	kw_count++;
+	strcpy( Config.keywords[Config.count].name, name);
+	strcpy( Config.keywords[Config.count].value, value);
+	Config.keywords[Config.count].type = type;
+	Config.count++;
 }
 
 
@@ -41,8 +38,7 @@ void init_keywords(void)
 	setKeyword("字符指针", "char *", KEYWORK);	
 
 	setKeyword("打印", "printf", FUNCTION);
-	setKeyword("输入", "scanf", FUNCTION);
-	
+	setKeyword("输入", "scanf", FUNCTION);	
 
 	/*setKeyword("“", "\"");
 	setKeyword("”", "\"");

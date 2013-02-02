@@ -14,6 +14,10 @@
 		int type;
 	} keyword ;
 
+	typedef struct {
+		keyword keywords[100];
+		int count;
+	} _CONFIG;
 
 	void init_keywords(void);
 

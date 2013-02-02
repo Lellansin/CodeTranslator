@@ -3,12 +3,41 @@
 
 #include "keywords.h"
 #include "file.h"
+#include "list.h"
 
 void help(void);
 
-int main(int argc, char const *argv[])
+void prn_list(ElementType *data)
 {
+	printf("%d \n", *data);
+}
 
+
+int main(int argc, char *argv[])
+{
+	char text1[20];
+	LinkList list;
+
+	list_init( &list );
+
+	list_append( &list, 1);
+	list_append( &list, 5);
+	list_append( &list, 12);
+	list_append( &list, 36);
+	list_append( &list, 56);
+	list_append( &list, 88);
+
+	//list_insert(&list, 0, 3);
+
+	//list_prepend(&list, 10);
+
+	list_delete( &list, 1);
+
+	list_for_each( &list, prn_list);
+	getchar();
+
+	
+/*
 	// ³õÊ¼»¯ÅäÖÃ
 	init_keywords();
 
@@ -21,7 +50,7 @@ int main(int argc, char const *argv[])
 	}else if(argc == 3){
 		//process(argv[1], argv[2]);
 	}
-
+*/
 	return 0;
 }
 

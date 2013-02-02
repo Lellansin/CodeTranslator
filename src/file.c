@@ -4,15 +4,16 @@
 #include "file.h"
 #include "str.h"
 
+
 // 文件处理
-void process(char filename_in[256])
+void process(char filename_in[FILENAME_MAX])
 {
 	FILE *file_deal;
 	FILE *file_out;
 
-	char filename_out[256];
+	char filename_out[FILENAME_MAX];
 
-	char buffer[256];
+	char buffer[FILENAME_MAX];
 	char *str = NULL;
 	char *after;	
 
@@ -31,8 +32,8 @@ void process(char filename_in[256])
 	}
 
 
-	while( (str = fgets(buffer,256,file_deal)) != NULL){		
-		after = (char *)malloc(sizeof(char) * 256);
+	while( (str = fgets(buffer, FILENAME_MAX, file_deal)) != NULL){		
+		after = (char *)malloc(sizeof(char) * FILENAME_MAX);
 
 		// 判断代码是否是注释
 
@@ -49,4 +50,13 @@ void process(char filename_in[256])
 	fclose(file_out);
 
 	printf("文件处理成功");
+}
+
+
+/*
+ * 读取配置文件
+ */
+void ConfigInit()
+{
+
 }
