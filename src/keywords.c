@@ -1,11 +1,11 @@
 #include "keywords.h"
 
-// å…³é”®å­—æ•°ç»„
+// ¹Ø¼ü×ÖÊı×é
 keyword keywords[100];
-// å…³é”®å­—æ•°ç›®
+// ¹Ø¼ü×ÖÊıÄ¿
 int kw_count;
 
-// è®¾ç½®å…³é”®å­—
+// ÉèÖÃ¹Ø¼ü×Ö
 void setKeyword(char *name, char *value, int type)
 {
 	strcpy( keywords[kw_count].name, name);
@@ -15,36 +15,36 @@ void setKeyword(char *name, char *value, int type)
 }
 
 
-// åˆå§‹åŒ–å…³é”®å­—
+// ³õÊ¼»¯¹Ø¼ü×Ö
 void init_keywords(void)
 {
-	setKeyword("è‹¥", "if", KEYWORK);
-	setKeyword("å¦åˆ™", "else", KEYWORK);
+	setKeyword("Èô", "if", KEYWORK);
+	setKeyword("·ñÔò", "else", KEYWORK);
 
-	setKeyword("è·³è½¬", "switch", KEYWORK);
-	setKeyword("æ¡ä»¶", "case", KEYWORK);
+	setKeyword("Ìø×ª", "switch", KEYWORK);
+	setKeyword("Ìõ¼ş", "case", KEYWORK);
 
-	setKeyword("å½“", "while", KEYWORK);
-	setKeyword("æ‰§è¡Œ", "do", KEYWORK);
-	setKeyword("å¾ªç¯", "for", KEYWORK);
+	setKeyword("µ±", "while", KEYWORK);
+	setKeyword("Ö´ĞĞ", "do", KEYWORK);
+	setKeyword("Ñ­»·", "for", KEYWORK);
 
-	setKeyword("å¼•å…¥", "#include", KEYWORK);
+	setKeyword("ÒıÈë", "#include", KEYWORK);
 
-	setKeyword("ä¸»å‡½æ•°", "main", KEYWORK);
-	setKeyword("è¿”å›", "return", KEYWORK);
+	setKeyword("Ö÷º¯Êı", "main", KEYWORK);
+	setKeyword("·µ»Ø", "return", KEYWORK);
 
-	setKeyword("æ•´å½¢", "int", KEYWORK);
-	setKeyword("æµ®ç‚¹å‹", "float", KEYWORK);
-	setKeyword("å­—ç¬¦", "char", KEYWORK);
-	setKeyword("å­—ç¬¦æŒ‡é’ˆ", "char *", KEYWORK);	
+	setKeyword("ÕûĞÎ", "int", KEYWORK);
+	setKeyword("¸¡µãĞÍ", "float", KEYWORK);
+	setKeyword("×Ö·û", "char", KEYWORK);
+	setKeyword("×Ö·ûÖ¸Õë", "char *", KEYWORK);	
 
-	setKeyword("æ‰“å°", "printf", FUNCTION);
-	setKeyword("è¾“å…¥", "scanf", FUNCTION);
+	setKeyword("´òÓ¡", "printf", FUNCTION);
+	setKeyword("ÊäÈë", "scanf", FUNCTION);
 	
 
-	/*setKeyword("â€œ", "\"");
-	setKeyword("â€", "\"");
-	setKeyword("ï¼ˆ", "(");
-	setKeyword("ï¼‰", ")");
-	setKeyword("ï¼›", ";");*/
+	/*setKeyword("¡°", "\"");
+	setKeyword("¡±", "\"");
+	setKeyword("£¨", "(");
+	setKeyword("£©", ")");
+	setKeyword("£»", ";");*/
 }

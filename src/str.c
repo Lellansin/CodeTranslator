@@ -9,13 +9,13 @@ extern int kw_count;
 
 
 /*
-	è·å–å­—ç¬¦ä¸²ä¸­çš„ä¸­æ–‡ï¼Œå¹¶æ›¿æ¢æˆè‹±æ–‡
+	»ñÈ¡×Ö·û´®ÖĞµÄÖĞÎÄ£¬²¢Ìæ»»³ÉÓ¢ÎÄ
 
-	char *original åŸå­—ç¬¦ä¸²
-	char *after æ›¿æ¢åçš„å­—ç¬¦ä¸²
+	char *original Ô­×Ö·û´®
+	char *after Ìæ»»ºóµÄ×Ö·û´®
 
-	ç¤ºä¾‹ï¼š
-	char a[50] = "Hey guys! è‹¥ i == 1";
+	Ê¾Àı£º
+	char a[50] = "Hey guys! Èô i == 1";
 	char b[50] = { 0 };
 	char *ptr_in = a;
 	char *ptr_out = b;
@@ -61,10 +61,10 @@ void replace_ZhToEn(char *original, char *after)
 }
 
 /*
- * é€šè¿‡å…³é”®å­—çš„ä¸­æ–‡è·å–åˆ°è‹±æ–‡
+ * Í¨¹ı¹Ø¼ü×ÖµÄÖĞÎÄ»ñÈ¡µ½Ó¢ÎÄ
  * 
- * char *name æŸ¥æ‰¾çš„ä¸­æ–‡
- * char *add è¿”å›çš„è‹±æ–‡ä¿å­˜çš„èµ·å§‹åœ°å€
+ * char *name ²éÕÒµÄÖĞÎÄ
+ * char *add ·µ»ØµÄÓ¢ÎÄ±£´æµÄÆğÊ¼µØÖ·
  */
 char * getValueByName(char *name, char *add)
 {
@@ -108,7 +108,7 @@ char * getValueByName(char *name, char *add)
 }
 
 
-// è·å–å­—ç¬¦ä¸²ä¸­çš„ä¸­æ–‡
+// »ñÈ¡×Ö·û´®ÖĞµÄÖĞÎÄ
 void getChinese(char *str)
 {
 	char word[10][256] = {0};

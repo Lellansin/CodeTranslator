@@ -4,7 +4,7 @@
 #include "file.h"
 #include "str.h"
 
-// æ–‡ä»¶å¤„ç†
+// ÎÄ¼ş´¦Àí
 void process(char filename_in[256])
 {
 	FILE *file_deal;
@@ -18,7 +18,7 @@ void process(char filename_in[256])
 
 	if((file_deal = fopen(filename_in,"r")) == NULL)
 	{
-		printf("æ–‡ä»¶æ‰“å¼€å¤±è´¥");
+		printf("ÎÄ¼ş´ò¿ªÊ§°Ü");
 		return ;
 	}
 
@@ -26,7 +26,7 @@ void process(char filename_in[256])
 
 	if((file_out = fopen(filename_out,"w")) == NULL)
 	{
-		printf("æ–‡ä»¶ç”Ÿæˆå¤±è´¥");
+		printf("ÎÄ¼şÉú³ÉÊ§°Ü");
 		return ;
 	}
 
@@ -34,12 +34,12 @@ void process(char filename_in[256])
 	while( (str = fgets(buffer,256,file_deal)) != NULL){		
 		after = (char *)malloc(sizeof(char) * 256);
 
-		// åˆ¤æ–­ä»£ç æ˜¯å¦æ˜¯æ³¨é‡Š
+		// ÅĞ¶Ï´úÂëÊÇ·ñÊÇ×¢ÊÍ
 
-			// ä¸æ˜¯æ³¨é‡Š,æ›¿æ¢ä¸­æ–‡å…³é”®å­—
+			// ²»ÊÇ×¢ÊÍ,Ìæ»»ÖĞÎÄ¹Ø¼ü×Ö
 			replace_ZhToEn(str, after);
 
-			// æ˜¯æ³¨é‡Š,å¿½ç•¥æ›¿æ¢ç›´æ¥è¾“å‡º
+			// ÊÇ×¢ÊÍ,ºöÂÔÌæ»»Ö±½ÓÊä³ö
 
 	    fputs(after,file_out);
 		free(after);
@@ -48,5 +48,5 @@ void process(char filename_in[256])
 	fclose(file_deal);
 	fclose(file_out);
 
-	printf("æ–‡ä»¶å¤„ç†æˆåŠŸ");
+	printf("ÎÄ¼ş´¦Àí³É¹¦");
 }

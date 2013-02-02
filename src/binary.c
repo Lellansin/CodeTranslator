@@ -8,7 +8,7 @@ extern int kw_count;
 
 
 /*
- * æ‰“å°ä¸­æ–‡æ¯1å­—èŠ‚çš„å€¼
+ * ´òÓ¡ÖĞÎÄÃ¿1×Ö½ÚµÄÖµ
  */
 void printChineseBinary(char *string)
 {
@@ -27,7 +27,7 @@ void printChineseBinary(char *string)
 
 
 /*
- * éå†å…³é”®å­—ï¼Œæ‰“å°1å­—èŠ‚çš„å€¼
+ * ±éÀú¹Ø¼ü×Ö£¬´òÓ¡1×Ö½ÚµÄÖµ
  */
 void printBinary()
 {

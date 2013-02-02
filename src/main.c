@@ -9,7 +9,7 @@ void help(void);
 int main(int argc, char const *argv[])
 {
 
-	// åˆå§‹åŒ–é…ç½®
+	// ³õÊ¼»¯ÅäÖÃ
 	init_keywords();
 
 	if(argc == 1)
@@ -27,7 +27,7 @@ int main(int argc, char const *argv[])
 
 void help()
 {
-	printf("ä»£ç ç¿»è¯‘å·¥å…· v0.1\n");
-	printf("è¯­æ³•ï¼šLinh ä»£ç æ–‡ä»¶\n");
+	printf("´úÂë·­Òë¹¤¾ß v0.1\n");
+	printf("Óï·¨£ºLinh ´úÂëÎÄ¼ş\n");
 }
 
