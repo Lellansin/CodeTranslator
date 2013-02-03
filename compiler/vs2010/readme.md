@@ -1,3 +1,9 @@
+<h1>Microsoft (R) C/C++ Compiler</h1>
+
+Copyright (C) Microsoft Corporation
+
+if you do not have installed this visual stdio, you may not use this compiler lawful.
+
 <h1>Microsoft (R) C/C++ 编译器</h1>
 
 <h2>配置</h2>
@@ -29,7 +35,7 @@
 
 <h2>支持</h2>
 
-尚未对当前编译器做详细检测，有可能出现LIB文件缺失。
+尚未对当前编译器做详细检测，有可能出现LIB文件缺失，<font style="color">仅支持win7</font>。
 
 如果发现问题请联系lellansin@gmail.com，以便补救。
 
