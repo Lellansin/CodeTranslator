@@ -1,76 +1,77 @@
-<h1>Microsoft (R) C/C++ ±àÒëÆ÷</h1>
+<h1>Microsoft (R) C/C++ ç¼–è¯‘å™¨</h1>
 
-<h2>ÅäÖÃ</h2>
+<h2>é…ç½®</h2>
 
-Ğè½²binÄ¿Â¼¼ÓÈëpath»·¾³±äÁ¿
-²¢Ìí¼ÓĞÂµÄ»·¾³±äÁ¿INCLUDEºÍLIB
+éœ€å°†binç›®å½•åŠ å…¥pathç¯å¢ƒå˜é‡ï¼Œå¹¶æ·»åŠ æ–°çš„ç¯å¢ƒå˜é‡INCLUDEå’ŒLIBã€‚
 
-¿ÉÒÔ²é¿´¸ùÄ¿Â¼ÏÂµÄconfig.bat
-
-
-<h2>Ê¹ÓÃ</h2>
-
-Ë«»÷open¿ÉÒÔ×Ô¶¯ÅäÖÃÔËĞĞ»·¾³, ²¢ĞÂ½¨cmd´°¿Ú¡£
-´ËÊ±¿ÉÒÔÊäÈë cl È»ºó»Ø³µ¿´µ½ÆäÌáÊ¾£º
+å¯ä»¥æŸ¥çœ‹æ ¹ç›®å½•ä¸‹çš„config.bat
 
 
-ÓÃÓÚ x64 µÄ Microsoft (R) C/C++ ÓÅ»¯±àÒëÆ÷ 16.00.40219.01 °æ
-°æÈ¨ËùÓĞ(C) Microsoft Corporation¡£±£ÁôËùÓĞÈ¨Àû¡£
+<h2>ä½¿ç”¨</h2>
 
-ÓÃ·¨: cl [ Ñ¡Ïî... ] ÎÄ¼şÃû... [ /link Á´½ÓÑ¡Ïî... ]
+åŒå‡»openå¯ä»¥è‡ªåŠ¨é…ç½®è¿è¡Œç¯å¢ƒ, å¹¶æ–°å»ºcmdçª—å£ã€‚æ­¤æ—¶å¯ä»¥è¾“å…¥ cl ç„¶åå›è½¦çœ‹åˆ°å…¶æç¤ºï¼š
 
+<pre>
+ç”¨äº x64 çš„ Microsoft (R) C/C++ ä¼˜åŒ–ç¼–è¯‘å™¨ 16.00.40219.01 ç‰ˆ
+ç‰ˆæƒæ‰€æœ‰(C) Microsoft Corporationã€‚ä¿ç•™æ‰€æœ‰æƒåˆ©ã€‚
 
-<h2>²âÊÔ</h2>
+ç”¨æ³•: cl [ é€‰é¡¹... ] æ–‡ä»¶å... [ /link é“¾æ¥é€‰é¡¹... ]
+</pre>
 
-µ±Ç°Ä¿Â¼ÏÂÓĞ¸ötest.cÎÄ¼ş¡£
+<h2>æµ‹è¯•</h2>
 
-¿ÉÒÔÖ´ĞĞ cl test.c ¶ÔÆä½øĞĞ±àÒëÁ¬½Ó
+å½“å‰ç›®å½•ä¸‹æœ‰ä¸ªtest.cæ–‡ä»¶ã€‚
 
-Éú³ÉµÄobjºÍexeÎÄ¼ş»áÖ±½Ó³öÏÖÔÚµ±Ç°Ä¿Â¼ÏÂ
+å¯ä»¥æ‰§è¡Œ cl test.c å¯¹å…¶è¿›è¡Œç¼–è¯‘è¿æ¥
 
-
-<h2>Ö§³Ö</h2>
-
-ÉĞÎ´¶Ôµ±Ç°±àÒëÆ÷×öÏêÏ¸¼ì²â£¬ÓĞ¿ÉÄÜ³öÏÖLIBÎÄ¼şÈ±Ê§¡£
-Èç¹û·¢ÏÖÎÊÌâÇëÁªÏµlellansin@gmail.com£¬ÒÔ±ã²¹¾È¡£
-
-´ÖÂÔ¼ì²â,Ö§³ÖµÄ¿â°üÀ¨:
-
-assert.h
-ctype.h
-errno.h
-float.h
-limits.h
-locale.h
-math.h
-setjmp.h
-signal.h
-stdarg.h
-stddef.h
-stdio.h
-stdlib.h
-string.h
-time.h
-
-conio.h
-dos.h
-fcntl.h
-io.h
-process.h
-share.h
-malloc.h
+ç”Ÿæˆçš„objå’Œexeæ–‡ä»¶ä¼šç›´æ¥å‡ºç°åœ¨å½“å‰ç›®å½•ä¸‹
 
 
-²»Ö§³ÖµÄ¿â:
+<h2>æ”¯æŒ</h2>
 
-alloc.h
-bios.h
-dir.h
-erron.h
-graphics.h
-limit.h
-mem.h
-sys\stat
-sys\types
-sys\time
-value.h
+å°šæœªå¯¹å½“å‰ç¼–è¯‘å™¨åšè¯¦ç»†æ£€æµ‹ï¼Œæœ‰å¯èƒ½å‡ºç°LIBæ–‡ä»¶ç¼ºå¤±ã€‚
+
+å¦‚æœå‘ç°é—®é¢˜è¯·è”ç³»lellansin@gmail.comï¼Œä»¥ä¾¿è¡¥æ•‘ã€‚
+
+ç²—ç•¥æ£€æµ‹,æ”¯æŒçš„åº“åŒ…æ‹¬:
+
+<ul>
+	<li>assert.h</li>
+	<li>ctype.h</li>
+	<li>errno.h</li>
+	<li>float.h</li>
+	<li>limits.h</li>
+	<li>locale.h</li>
+	<li>math.h</li>
+	<li>setjmp.h</li>
+	<li>signal.h</li>
+	<li>stdarg.h</li>
+	<li>stddef.h</li>
+	<li>stdio.h</li>
+	<li>stdlib.h</li>
+	<li>string.h</li>
+	<li>time.h</li>
+	<li>conio.h</li>
+	<li>dos.h</li>
+	<li>fcntl.h</li>
+	<li>io.h</li>
+	<li>process.h</li>
+	<li>share.h</li>
+	<li>malloc.h</li>
+</ul>
+
+<li>ä¸æ”¯æŒçš„åº“:</li>
+
+<ul>
+	<li>alloc.h</li>
+	<li>bios.h</li>
+	<li>dir.h</li>
+	<li>erron.h</li>
+	<li>graphics.h</li>
+	<li>limit.h</li>
+	<li>mem.h</li>
+	<li>sys\stat</li>
+	<li>sys\types</li>
+	<li>sys\time</li>
+	<li>value.h</li>
+</ul>
